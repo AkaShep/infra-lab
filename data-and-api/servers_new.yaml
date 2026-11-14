@@ -1,0 +1,21 @@
+environment: staging
+servers:
+- name: web-01
+  ip: 10.0.0.11
+  ports:
+  - 80
+  - 443
+  active: true
+- name: db-01
+  ip: 10.0.0.12
+  ports:
+  - 5432
+  active: false
+  owner: null
+  country: 'NO'
+  python: '3.10'
+- name: cache-01
+  ip: 10.0.0.13
+  ports:
+  - 6379
+  active: true
